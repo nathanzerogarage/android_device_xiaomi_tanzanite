@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
+    dtbo \
     vendor_boot \
     system \
     system_ext \
