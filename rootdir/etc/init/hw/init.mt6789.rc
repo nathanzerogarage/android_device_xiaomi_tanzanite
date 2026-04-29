@@ -738,6 +738,7 @@ on property:sys.boot_completed=1 && property:ro.debuggable="1"
    chmod 0755 /sys/kernel/debug
 #O6 code for HQ-392650 by p-jiyongfei at 2024.7.15 end
 
+# Stop statsd
 on zygote-start
     stop statsd
 
@@ -749,3 +750,11 @@ service statsd /apex/com.android.os.statsd/bin/statsd
     task_profiles ProcessCapacityHigh HighEnergySaving
     override
     disabled
+
+# Charging Control
+on property:sys.battery.suspend=1
+    write /sys/devices/platform/hq_chg_manager/power_supply/battery/input_suspend 1
+
+on property:sys.battery.suspend=0
+    write /sys/devices/platform/hq_chg_manager/power_supply/battery/input_suspend 0
+
