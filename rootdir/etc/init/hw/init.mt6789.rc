@@ -751,3 +751,10 @@ service statsd /apex/com.android.os.statsd/bin/statsd
     override
     disabled
 
+# Charging Control
+on property:sys.battery.suspend=1
+    write /sys/devices/platform/hq_chg_manager/power_supply/battery/input_suspend 1
+
+on property:sys.battery.suspend=0
+    write /sys/devices/platform/hq_chg_manager/power_supply/battery/input_suspend 0
+
