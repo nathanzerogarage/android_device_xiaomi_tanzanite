@@ -758,3 +758,7 @@ on property:sys.battery.suspend=1
 on property:sys.battery.suspend=0
     write /sys/devices/platform/hq_chg_manager/power_supply/battery/input_suspend 0
 
+# Reduce Kernel Printk logging
+on early-init
+    write /proc/sys/kernel/printk "4 4 1 7"
+
