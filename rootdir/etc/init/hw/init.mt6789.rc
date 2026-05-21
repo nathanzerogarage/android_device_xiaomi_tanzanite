@@ -755,3 +755,8 @@ on property:sys.battery.suspend=0
 on early-init
     write /proc/sys/kernel/printk "4 4 1 7"
 
+# Reduce Kernel Printk logging and Kill Battery first_usage_date
+on early-init
+    write /proc/sys/kernel/printk "4 4 1 7"
+    chmod 000 /sys/class/power_supply/battery/first_usage_date
+
