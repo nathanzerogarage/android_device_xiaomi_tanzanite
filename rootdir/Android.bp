@@ -25,18 +25,6 @@ prebuilt_etc {
     vendor: true
 }
 
-sh_binary {
-    name: "init.insmod.sh",
-    src: "bin/init.insmod.sh",
-    vendor: true
-}
-
-prebuilt_etc {
-    name: "init.insmod.mtk.cfg",
-    src: "etc/init.insmod.mtk.cfg",
-    vendor: true
-}
-
 prebuilt_etc {
     name: "init.zram.rc",
     src: "etc/init/hw/init.zram.rc",
@@ -82,13 +70,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mt6789.usb.rc",
     src: "etc/init/hw/init.mt6789.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
-    name: "init.mtkgki.rc",
-    src: "etc/init/hw/init.mtkgki.rc",
     sub_dir: "init/hw",
     vendor: true
 }

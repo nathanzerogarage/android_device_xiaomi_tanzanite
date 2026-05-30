@@ -13,27 +13,17 @@ include $(CLEAR_VARS)
 
 # Libraries / Binaries linked to <dir>/<platform>/<lib>.so
 VENDOR_PLATFORM_LINKS := \
-	$(TARGET_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
+	$(TARGET_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek.mt6789 \
 	$(TARGET_OUT_VENDOR)/bin/hw/camerahalserver \
 	$(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so \
-	$(TARGET_OUT_VENDOR)/lib/libvcodec_utility.so \
 	$(TARGET_OUT_VENDOR)/lib/libvcodec_utility_v3a.so \
-	$(TARGET_OUT_VENDOR)/lib/libvcodecdrv.so \
 	$(TARGET_OUT_VENDOR)/lib/libvcodecdrv_v3a.so \
-	$(TARGET_OUT_VENDOR)/lib/libvpudv3a_vcodec.so \
-	$(TARGET_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
+	$(TARGET_OUT_VENDOR)/lib64/arm.graphics-V5-ndk.so \
 	$(TARGET_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/gralloc.common.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
+	$(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
+	$(TARGET_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mali.so \
 	$(TARGET_OUT_VENDOR)/lib64/lib3a.ae.core.so \
 	$(TARGET_OUT_VENDOR)/lib64/lib3a.ae.so \
@@ -59,7 +49,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libaaa_ltm.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaaa_ltmx.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaal_cust_func.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaalservice.so \
 	$(TARGET_OUT_VENDOR)/lib64/libacdk.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiawb_moon.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiawb_p1ggm.so \
@@ -330,7 +319,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.halisp.buf.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.halisp.common.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.halisp.so \
-	$(TARGET_OUT_VENDOR)/lib64/libcam.halsensor.hwintegration.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.halsensor.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.iopipe.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.isptuning.so \
@@ -423,13 +411,11 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libmtkcam_tuning_utils.so \
 	$(TARGET_OUT_VENDOR)/lib64/libmtkcam_ulog.so \
 	$(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so \
-	$(TARGET_OUT_VENDOR)/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so \
 	$(TARGET_OUT_VENDOR)/lib64/libneuron_adapter_mgvi.so \
-	$(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so \
-	$(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so \
+	$(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.8.so \
 	$(TARGET_OUT_VENDOR)/lib64/libpq_cust_base.so \
 	$(TARGET_OUT_VENDOR)/lib64/libpqparamparser.so \
-	$(TARGET_OUT_VENDOR)/lib64/libpq_prot.so \
+	$(TARGET_OUT_VENDOR)/lib64/libpq_sec.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX230PdafLibrary.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX230PdafLibraryWrapper.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX338PdafLibrary.so \
@@ -439,7 +425,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX519PdafLibrary.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX519PdafLibraryWrapper.so \
 	$(TARGET_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
-	$(TARGET_OUT_VENDOR)/lib64/libvainr_model.so \
 	$(TARGET_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
 	$(TARGET_OUT_VENDOR)/lib64/ov02f1b_aac_depth_mipi_raw_IdxMgr.so \
 	$(TARGET_OUT_VENDOR)/lib64/ov02f1b_aac_depth_mipi_raw_tuning.so \
@@ -460,7 +445,12 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/sc202v_truly2_macro_mipi_raw_IdxMgr.so \
 	$(TARGET_OUT_VENDOR)/lib64/sc202v_truly2_macro_mipi_raw_tuning.so \
 	$(TARGET_OUT_VENDOR)/lib64/sc202v_truly_macro_mipi_raw_IdxMgr.so \
-	$(TARGET_OUT_VENDOR)/lib64/sc202v_truly_macro_mipi_raw_tuning.so
+	$(TARGET_OUT_VENDOR)/lib64/sc202v_truly_macro_mipi_raw_tuning.so \
+	$(TARGET_OUT_VENDOR)/lib64/libmtkcam.debugwrapper.so \
+	$(TARGET_OUT_VENDOR)/lib64/s5khm6_ofilm_main_mipi_raw_sy_IdxMgr.so \
+	$(TARGET_OUT_VENDOR)/lib64/s5khm6_aac_main_mipi_raw_sy_IdxMgr.so \
+	$(TARGET_OUT_VENDOR)/lib64/s5khm6_sunny_main_mipi_raw_sy_IdxMgr.so \
+	$(TARGET_OUT_VENDOR)/lib64/libmtk_mali_user.so
 
 # Gatekeeper symlinks
 GATEKEEPER_SYMLINKS := \

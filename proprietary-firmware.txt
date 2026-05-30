@@ -1,11 +1,11 @@
-# Firmware from OS2.0.214.0.VOGEUXM
+# Firmware from OS3.0.301.0.WOGMIXM
 dpm.img;AB
 gz.img;AB
 lk.img;AB
 mcupm.img;AB
 md1img.img;AB
 pi_img.img;AB
-preloader_tanzanite.bin:preloader_raw.img;AB|ad68beab35a8320bb56040410b3639d38f3d2eb5
+preloader_raw.img;AB
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB

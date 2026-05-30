@@ -27,6 +27,7 @@ AB_OTA_PARTITIONS := \
     vendor_boot \
     system \
     system_ext \
+    system_dlkm \
     vendor \
     vendor_dlkm \
     product \
@@ -317,15 +318,12 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.insmod.sh \
-    init.insmod.mtk.cfg \
     init.connectivity.rc \
     init.fingerprint.rc \
     init.modem.rc \
     init.mt6789.rc \
     init.mt6789.power.rc \
     init.mt6789.usb.rc \
-    init.mtkgki.rc \
     init.project.rc \
     init.sensor_2_0.rc \
     init.recovery.usb.rc \
