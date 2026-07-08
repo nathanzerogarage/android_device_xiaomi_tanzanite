@@ -1453,10 +1453,9 @@ vendor/lib64/libarm_gralloc_properties_sysprop.so|76e7e5f8d879afc15e17902c87acfb
 vendor/lib64/liblibarm_mali_config_sysprops.so|eca4cde8c0b75288a8af6a63a2edb2b47f58b163
 
 # Keymint
-system/lib64/android.hardware.security.keymint-V3-ndk.so:vendor/lib64/android.hardware.security.keymint-V3-ndk-v34.so;FIX_SONAME
+system/lib64/android.hardware.security.keymint-V3-ndk.so:vendor/lib64/android.hardware.security.keymint-V3-ndk..so;FIX_SONAME
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
 vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
