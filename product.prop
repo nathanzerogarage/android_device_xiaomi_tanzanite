@@ -3,3 +3,6 @@ debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 
 ro.product.marketname=Redmi Note 14
+
+# RKP
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
