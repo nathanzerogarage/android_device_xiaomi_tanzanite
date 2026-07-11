@@ -22,6 +22,13 @@ $(call inherit-product, vendor/mediatek/ims/ims.mk)
 # Keys
 $(call inherit-product-if-exists, vendor/private/keys/keys.mk)
 
+# SF Frame Rate
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2026-02-01
 BOOT_SECURITY_PATCH := 2026-02-01
