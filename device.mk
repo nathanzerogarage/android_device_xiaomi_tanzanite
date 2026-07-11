@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 # Inherit common MediaTek IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
+# Keys
+$(call inherit-product-if-exists, vendor/private/keys/keys.mk)
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2026-02-01
 BOOT_SECURITY_PATCH := 2026-02-01
