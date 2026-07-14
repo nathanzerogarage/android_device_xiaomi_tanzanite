@@ -1452,6 +1452,12 @@ vendor/lib64/libarm_egl_properties_sysprop.so|a5b4216f63c4539a1a95379a38aee8c94b
 vendor/lib64/libarm_gralloc_properties_sysprop.so|76e7e5f8d879afc15e17902c87acfb33fed9bef6
 vendor/lib64/liblibarm_mali_config_sysprops.so|eca4cde8c0b75288a8af6a63a2edb2b47f58b163
 
+# HotwordEnrollment
+product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Keymint
 system/lib64/android.hardware.security.keymint-V3-ndk.so:vendor/lib64/android.hardware.security.keymint-V3-ndk..so;FIX_SONAME
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
