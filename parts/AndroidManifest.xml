@@ -39,12 +39,12 @@
         </receiver>
 
         <!-- Services -->
-        <service android:name=".battery.ChargingLimitService" />
+        <service android:name=".battery.ChargingLimiterService" />
 
-        <!-- Battery/Charging Activity -->
+        <!-- Charging Limiter -->
         <activity
-            android:name=".battery.ChargingControlActivity"
-            android:label="@string/charging_control_title"
+            android:name=".battery.ChargingLimiterActivity"
+            android:label="@string/charging_limiter_title"
             android:exported="true">
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -55,7 +55,7 @@
                 android:value="com.android.settings.category.ia.battery" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/charging_control_summary" />
+                android:resource="@string/charging_limiter_summary" />
         </activity>
 
         <!-- GameBar Overlay -->

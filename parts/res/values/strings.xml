@@ -8,9 +8,9 @@
     <!-- Xiaomi Parts -->
     <string name="app_name">Xiaomi Parts</string>
 
-    <!-- Charging Control -->
-    <string name="charging_control_title">Charging Control</string>
-    <string name="charging_control_summary">Improve battery lifespan by limiting Charge Percentage</string>
+    <!-- Charging Limiter -->
+    <string name="charging_limiter_title">Charging Limiter</string>
+    <string name="charging_limiter_summary">Limit charging to extend battery lifespan</string>
     <string name="charging_limit_title">Stop at Percentage</string>
     <string name="charging_limit_summary">Current limit: %1$d%%</string>
 

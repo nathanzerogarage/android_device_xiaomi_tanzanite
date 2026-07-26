@@ -16,22 +16,22 @@ import com.android.settingslib.widget.SettingsBasePreferenceFragment
 import com.android.settingslib.widget.SliderPreference
 import com.xiaomi.settings.R
 
-class ChargingControlFragment : SettingsBasePreferenceFragment(),
+class ChargingLimiterFragment : SettingsBasePreferenceFragment(),
     Preference.OnPreferenceChangeListener {
 
     private var mLimitPref: SliderPreference? = null
     private var mMasterSwitch: MainSwitchPreference? = null
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.charging_control_settings, rootKey)
+        setPreferencesFromResource(R.xml.charging_limiter_settings, rootKey)
 
         mLimitPref = findPreference<SliderPreference>(BatteryUtils.PREF_CHARGING_LIMIT)?.apply {
-            onPreferenceChangeListener = this@ChargingControlFragment
+            onPreferenceChangeListener = this@ChargingLimiterFragment
             updateSummary(value)
         }
 
-        mMasterSwitch = findPreference<MainSwitchPreference>(BatteryUtils.PREF_CHARGING_CTRL)?.apply {
-            onPreferenceChangeListener = this@ChargingControlFragment
+        mMasterSwitch = findPreference<MainSwitchPreference>(BatteryUtils.PREF_CHARGING_LIMITER)?.apply {
+            onPreferenceChangeListener = this@ChargingLimiterFragment
         }
     }
 
@@ -49,7 +49,7 @@ class ChargingControlFragment : SettingsBasePreferenceFragment(),
         val currentLevel = getBatteryLevel()
         BatteryUtils.setChargingSuspendAsync(isEnabled && currentLevel >= limit)
 
-        requireContext().startService(Intent(requireContext(), ChargingLimitService::class.java))
+        requireContext().startService(Intent(requireContext(), ChargingLimiterService::class.java))
         return true
     }
 

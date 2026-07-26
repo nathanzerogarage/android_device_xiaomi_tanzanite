@@ -10,12 +10,12 @@ import android.os.Bundle
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
 import com.android.settingslib.collapsingtoolbar.R as CollapsingToolbarR
 
-class ChargingControlActivity : CollapsingToolbarBaseActivity() {
+class ChargingLimiterActivity : CollapsingToolbarBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(CollapsingToolbarR.id.content_frame, ChargingControlFragment())
+                .replace(CollapsingToolbarR.id.content_frame, ChargingLimiterFragment())
                 .commit()
         }
     }

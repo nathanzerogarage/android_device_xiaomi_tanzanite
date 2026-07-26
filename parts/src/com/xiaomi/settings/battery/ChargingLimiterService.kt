@@ -15,7 +15,7 @@ import android.os.BatteryManager
 import android.os.IBinder
 import androidx.preference.PreferenceManager
 
-class ChargingLimitService : Service() {
+class ChargingLimiterService : Service() {
     private var mReceiverRegistered = false
 
     private val mBatteryReceiver = object : BroadcastReceiver() {
@@ -44,7 +44,7 @@ class ChargingLimitService : Service() {
         val storageContext = context.createDeviceProtectedStorageContext()
         val prefs = PreferenceManager.getDefaultSharedPreferences(storageContext)
 
-        if (!prefs.getBoolean(BatteryUtils.PREF_CHARGING_CTRL, false)) {
+        if (!prefs.getBoolean(BatteryUtils.PREF_CHARGING_LIMITER, false)) {
             BatteryUtils.setChargingSuspendAsync(false)
             return
         }

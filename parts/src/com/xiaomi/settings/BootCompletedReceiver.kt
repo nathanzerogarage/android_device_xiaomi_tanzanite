@@ -11,7 +11,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.UserHandle
 import android.util.Log
-import com.xiaomi.settings.battery.ChargingLimitService
+import com.xiaomi.settings.battery.ChargingLimiterService
 
 /** Everything begins at boot. */
 class BootCompletedReceiver : BroadcastReceiver() {
@@ -34,6 +34,6 @@ class BootCompletedReceiver : BroadcastReceiver() {
 
     private fun onLockedBootCompleted(context: Context) {
         // Battery
-        context.startServiceAsUser(Intent(context, ChargingLimitService::class.java), UserHandle.CURRENT)
+        context.startServiceAsUser(Intent(context, ChargingLimiterService::class.java), UserHandle.CURRENT)
     }
 }
