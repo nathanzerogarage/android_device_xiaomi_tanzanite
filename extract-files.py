@@ -63,7 +63,7 @@ blob_fixups: blob_fixups_user_type = {
     .patchelf_version(patchelf_version)
     .replace_needed(
         "android.hardware.security.keymint-V1-ndk_platform.so",
-        "android.hardware.security.keymint-V3-ndk-v34.so",
+        "android.hardware.security.keymint-V3-ndk-v35.so",
     )
     .add_needed("android.hardware.security.rkp-V3-ndk.so")
     .replace_needed(
