@@ -16,9 +16,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
-# Inherit common MediaTek IMS
-$(call inherit-product, vendor/mediatek/ims/ims.mk)
-
 # Keys
 $(call inherit-product-if-exists, vendor/private/keys/keys.mk)
 
@@ -153,19 +150,16 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # IMS
+$(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
+PRODUCT_PACKAGES += \
+    xiaomi-telephony-stub
+
 PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-framework \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
-    mediatek-ims-extension-plugin
+    xiaomi-telephony-stub
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.telephony.xml
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
