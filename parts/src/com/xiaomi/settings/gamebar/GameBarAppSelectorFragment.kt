@@ -22,10 +22,10 @@ import android.os.Bundle
 import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
 import androidx.preference.SwitchPreferenceCompat
-import com.android.settingslib.widget.SettingsBasePreferenceFragment
+import androidx.preference.PreferenceFragmentCompat
 import java.util.HashSet
 
-class GameBarAppSelectorFragment : SettingsBasePreferenceFragment() {
+class GameBarAppSelectorFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         val screen = preferenceManager.createPreferenceScreen(requireContext())

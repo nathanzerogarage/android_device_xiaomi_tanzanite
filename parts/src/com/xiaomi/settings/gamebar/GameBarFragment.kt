@@ -23,13 +23,13 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.preference.ListPreference
 import androidx.preference.Preference
-import com.android.settingslib.widget.SettingsBasePreferenceFragment
+import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.android.settingslib.widget.MainSwitchPreference
 import com.android.settingslib.widget.SliderPreference
 import com.xiaomi.settings.R
 
-class GameBarFragment : SettingsBasePreferenceFragment() {
+class GameBarFragment : PreferenceFragmentCompat() {
 
     private lateinit var mGameBar: GameBar
     private var mMasterSwitch: MainSwitchPreference? = null

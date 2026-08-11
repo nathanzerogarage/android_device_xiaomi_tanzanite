@@ -22,7 +22,7 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.SubSettingsBase.Expressive"
+        android:theme="@style/Theme.SubSettingsBase"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">

@@ -12,11 +12,11 @@ import android.os.BatteryManager
 import android.os.Bundle
 import androidx.preference.Preference
 import com.android.settingslib.widget.MainSwitchPreference
-import com.android.settingslib.widget.SettingsBasePreferenceFragment
+import androidx.preference.PreferenceFragmentCompat
 import com.android.settingslib.widget.SliderPreference
 import com.xiaomi.settings.R
 
-class ChargingLimiterFragment : SettingsBasePreferenceFragment(),
+class ChargingLimiterFragment : PreferenceFragmentCompat(),
     Preference.OnPreferenceChangeListener {
 
     private var mLimitPref: SliderPreference? = null

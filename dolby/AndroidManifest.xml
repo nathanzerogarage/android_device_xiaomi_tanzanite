@@ -14,7 +14,7 @@
         android:allowBackup="false"
         android:label="@string/dolby_title"
         android:persistent="true"
-        android:theme="@style/Theme.SubSettingsBase.Expressive">
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver
             android:name=".BootCompletedReceiver"
