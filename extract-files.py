@@ -171,6 +171,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+    .apktool_patch('blob-patches/ImsService'),
+    'system_ext/lib64/libimsma.so': blob_fixup()
+    .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+    .add_needed('libaudioclient_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

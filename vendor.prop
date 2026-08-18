@@ -216,6 +216,9 @@ ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 
 # Radio
+persist.vendor.ims_support=1
+persist.vendor.vilte_support=1
+persist.vendor.volte_support=1
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.mdrsra_v2_support=1

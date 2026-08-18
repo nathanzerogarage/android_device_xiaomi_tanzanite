@@ -2,6 +2,13 @@
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 ro.radio.device_type=1
+ro.vendor.mtk_telephony_add_on_policy=0
+ro.vendor.imeisv=21
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # Connsys
 persist.vendor.connsysfw.enable=true
