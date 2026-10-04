@@ -186,6 +186,9 @@ vendor.powerhal.interaction.offset=0
 vendor.powerhal.interaction.min=50
 vendor.powerhal.interaction.max=150
 
+# Display
+ro.vendor.display.type=oled
+
 # PQ
 ro.vendor.pq.mtk_aal_support=1
 ro.vendor.pq.mtk_ai_scence_pq_support=0
