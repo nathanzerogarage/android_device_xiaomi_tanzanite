@@ -11,3 +11,7 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
+
+# Color Management
+persist.sys.sf.color_mode=2
+persist.sys.sf.native_mode=0
