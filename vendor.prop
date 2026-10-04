@@ -196,6 +196,13 @@ persist.vendor.dc_backlight.enable=false
 ro.vendor.colorpick_adjust=true
 ro.vendor.all_modes.colorpick_adjust=true
 ro.vendor.display.is_standard_mode=true
+vendor.display.idle_time=1100
+ro.vendor.display.idle_fps=60
+ro.vendor.display.idle_default_fps=60
+ro.vendor.display.aod_monitor_default_fps=60
+ro.vendor.display.fod_monitor_default_fps=120
+ro.vendor.display.touch.idle.enable=true
+ro.vendor.display.framework_thermal_dimming=true
 
 # PQ
 ro.vendor.mtk_pq_support=2
