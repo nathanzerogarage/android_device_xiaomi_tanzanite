@@ -188,6 +188,14 @@ vendor.powerhal.interaction.max=150
 
 # Display
 ro.vendor.display.type=oled
+sys.displayfeature_hidl=true
+vendor.displayfeature.entry.enable=true
+vendor.hbm.enable=true
+ro.vendor.localhbm.enable=true
+persist.vendor.dc_backlight.enable=false
+ro.vendor.colorpick_adjust=true
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.display.is_standard_mode=true
 
 # PQ
 ro.vendor.mtk_pq_support=2
