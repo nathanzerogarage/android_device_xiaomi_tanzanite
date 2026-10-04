@@ -9,8 +9,6 @@ persist.audio.button_jack.switch=0
 persist.vendor.audio.misound.disable=true
 ro.audio.monitorRotation=true
 ro.vendor.audio.bluetooth.support.misound=false
-ro.vendor.audio.device.dbcom=dolby_common
-ro.vendor.audio.dolby.dax.support=true
 ro.vendor.audio.feature.customizedsound=true
 ro.vendor.audio.fweffect=true
 ro.vendor.audio.game.effect=true
@@ -42,7 +40,6 @@ bluetooth.device.default_name=Redmi Note 14
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
 ro.bluetooth.a2dp_offload.supported=true
-ro.vendor.audio.bluetooth.support.misound=false
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
@@ -135,7 +132,6 @@ ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.hal_format=0x23
 ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.framebuffer_target=false
 ro.vendor.build.dont_use_vabc=true
 ro.vendor.mtk_ovl_bringup=0
-ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 
@@ -161,7 +157,6 @@ debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
 media.stagefright.thumbnail.prefer_hw_codecs=true
-persist.vendor.md_c2k_cap_dep_check=0
 ro.vendor.mtk.c2.vdec.fmt.support.level=1
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
@@ -286,13 +281,10 @@ ro.vendor.mtk_sim_hot_swap_common_slot=1
 ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_wappush_support=1
 ro.vendor.mtk_wapi_support=1
-ro.vendor.mtk_wfd_support=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 ro.vendor.radio.max.multisim=dsds
 ro.vendor.sim_me_lock_mode=3
-ro.vendor.wfd.dummy.enable=0
-ro.vendor.wfd.iframesize.level=0
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 
@@ -350,7 +342,6 @@ ro.vendor.mtk_mitee_support=1
 
 # Wi-Fi
 ro.hardware.wlan.dbs=0
-ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
@@ -359,6 +350,8 @@ ro.vendor.wlan.standalone.log=y
 
 # Wi-Fi Display
 ro.vendor.mtk_wfd_support=1
+ro.vendor.wfd.dummy.enable=0
+ro.vendor.wfd.iframesize.level=0
 
 # ZRAM writeback
 ro.zram_backing_device_min_free_mb=1536
