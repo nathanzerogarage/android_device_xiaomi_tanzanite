@@ -1,4 +1,4 @@
-# All blobs are from OS3.0.301.0.WOGMIXM unless noted or pinned
+# All blobs are from OS3.0.305.0.WOGMIXM unless noted or pinned
 
 # AAL
 vendor/lib64/mt6789/libaal_cust_func.so
